@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            margin: 5px;
+        }
+
+        .label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .textbox {
+            padding: 3px;
+            border: 3px;
+        }
+
+        .button {
+            width: 60px;
+            background-color: yellow;
+            color: grey;
+            border: 2px solid brown;
+            border-radius: 5px;
+        }
+    </style>
     <title>add two numbers</title>
 </head>
+
 <body>
     <div>
         <form>
-            <div><label for="firstNumber">first number</label>
-                 <input type="text" id="firstNumber"/></div>
-            <div><label for="secondNumber">second number</label>
-                <input type="text" id="secondNumber"/></div>
-            <div><label for="sumNumber">sum</label>
-                <input type="text" id="sumNumber"/></div>
-            <button type="button" onclick="doAdd();">Add</button>
+            <div><label class="label" for="firstNumber">first number</label>
+                <input type="text" id="firstNumber" autocomplete='off' />
+            </div>
+            <div><label class="label" for="secondNumber">second number</label>
+                <input type="text" id="secondNumber" />
+            </div>
+            <div><label class="label" for="sumNumber">sum</label>
+                <input type="text" id="sumNumber" />
+            </div>
+            <button class="button" type="button" onclick="doAdd();">Add</button>
         </form>
     </div>
     <script type="text/javascript">
@@ -24,7 +52,12 @@
             let sum = first + second;
             document.getElementById("sumNumber").value = sum;
         }
+        window.onload = function () {
+            document.getElementById("sumNumber").value = '';
+            document.getElementById("secondNumber").value = '';
+        }
     </script>
-    
+
 </body>
+
 </html>

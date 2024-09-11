@@ -7,6 +7,7 @@ function doAdd(){
         items = items + `<LI class="p-2 btn btn-primary m-2" 
                 style="list-style-type:none;">${n}</LI>`
     }
+    console.log(items)
     let numbers_html = `<UL class="d-flex flex-wrap">${items}</UL>`
     document.getElementById("numbers-list").innerHTML = numbers_html;
     document.getElementById('number').value = "";

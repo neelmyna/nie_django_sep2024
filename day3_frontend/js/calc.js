@@ -14,7 +14,7 @@ function calc(ch){
         document.getElementById("box").value = res;
     }else if(ch == 'C') {
         num1 = "";
-        num1 = "";
+        num2 = "";
         op = "";
         document.getElementById("box").value = "";
     }else { // + - * / 

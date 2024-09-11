@@ -16,11 +16,13 @@ function findResult(operation) {
     let result = 0
     if (operation == 1) {
         document.getElementById("output_caption").innerHTML = "Square";
+        document.getElementById("header").innerHTML = "Finding Square";
         result = num * num;
     }
     else {
         result = num * num * num;
         document.getElementById("output_caption").innerHTML = "Cube";
+        document.getElementById("header").innerHTML = "Finding Cube";
     }
         document.getElementById("output").value = result;
 }
