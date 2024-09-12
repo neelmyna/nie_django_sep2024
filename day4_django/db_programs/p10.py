@@ -29,9 +29,9 @@ class GameDataOperations:
             print('Return value = ', returnValue)
             connection.commit()    
         except DbOperationException:
-            print('Error while creating the table ABC')
+            print('Error while creating the table Games')
         except pymysql.err.OperationalError:
-            print('Error while creating the table XYZ')
+            print('Error while creating the table Games')
         except:
             print('Error in connecting to the database')
         finally:
@@ -39,7 +39,7 @@ class GameDataOperations:
             self.disConnectDb(connection)
             
     def createDb(self):
-        createDbQuery = 'create database IF NOT EXISTS nmamit_db'
+        createDbQuery = 'create database IF NOT EXISTS nie_db'
         try:
             connection = self.connectDb()
             cursor = connection.cursor()
