@@ -20,6 +20,7 @@ def printMobiles(rows):
         print('%-3s %-12s %s'%(row[0], row[1], row[2]))
 
 def listAllRows():
+    
     query = 'select * from mobiles'
     connectionObject = connectDb()
     cursor = connectionObject.cursor()
