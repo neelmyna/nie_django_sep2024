@@ -3,12 +3,13 @@ Django project  : `ClinicalProject`
     perform CRUD operations 
     for the `Doctor` model.
 
-1. Install MySQL Client for Django
+1. Install Django and MySQL Client for Django
 Make sure you have MySQL installed on your system. 
 Install the MySQL Python package:
 
-```bash
+```bash (Command Prompt)
 pip install mysqlclient
+pip install django
 ```
 
 2. 
@@ -16,7 +17,7 @@ pip install mysqlclient
 Log into your MySQL server and 
 create a database for your project:
 
-```sql
+```sql (workbench)
 CREATE DATABASE clinical_project_db;
 ```
 2.2 Create the Django Project and App

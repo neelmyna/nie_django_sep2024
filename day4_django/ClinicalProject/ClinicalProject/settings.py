@@ -78,13 +78,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'clinical_project_db',  # Your database name
-        'USER': 'your_mysql_user',       # Your MySQL user
-        'PASSWORD': 'your_mysql_password', # Your MySQL password
+        'USER': 'root',       # Your MySQL user
+        'PASSWORD': 'Root123', # Your MySQL password
         'HOST': 'localhost',             # Or your DB host
         'PORT': '3306',                  # Default MySQL port
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
